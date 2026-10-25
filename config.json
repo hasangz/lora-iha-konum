@@ -1,0 +1,26 @@
+{
+  "_aciklama": "Saha testi analiz yapılandırması. Koordinatlar ondalık derece, mesafeler metre, zamanlar saniye cinsindendir.",
+  "test_tarihi": "2026-10-16",
+  "utc_ofset_saat": 3,
+  "orijin": { "_aciklama": "İHA kalkış noktası (yerel Doğu-Kuzey sisteminin orijini)", "enlem": 39.7704379, "boylam": 32.0479478 },
+  "istasyonlar": {
+    "_aciklama": "A1 ve A3: istasyonun kendi GNSS kayıtlarının ortancası. A2: GNSS konum çözümü olmadığından harita okuması; okuma kayması A1 ve A3 üzerinden düzeltilir.",
+    "A1": { "gnss": [39.7709367, 32.0480267], "harita_dms": [[39, 46, 15.20], [32, 2, 52.80]] },
+    "A2": { "gnss": null,                     "harita_dms": [[39, 46, 12.34], [32, 2, 54.64]] },
+    "A3": { "gnss": [39.7701083, 32.0474183], "harita_dms": [[39, 46, 12.29], [32, 2, 50.49]] }
+  },
+  "ucuslar": {
+    "1": { "alicilar": { "A1": "data/ham/ucus1_alici1.xlsx", "A2": "data/ham/ucus1_alici2.xlsx", "A3": "data/ham/ucus1_alici3.xlsx" }, "rc": "data/ham/ucus1_rc.csv" },
+    "2": { "alicilar": { "A1": "data/ham/ucus2_alici1.xlsx", "A2": "data/ham/ucus2_alici2.xlsx", "A3": "data/ham/ucus2_alici3.xlsx" }, "rc": "data/ham/ucus2_rc.csv" }
+  },
+  "on_isleme": {
+    "paket_periyodu_s": 1.0011,
+    "epok_esik_s": 12,
+    "epok_kume_min_paket": 20,
+    "alan_esik_derece": 0.01,
+    "alan_merkez": [39.77, 32.048],
+    "rc_kayma_arama_s": [-20, 20, 0.5]
+  },
+  "bekleme": { "hiz_esik_ms": 0.8, "yukseklik_esik_m": 15, "min_paket": 6, "max_bosluk_paket": 3, "istasyon_min_paket": 3, "gerekli_istasyon": 3 },
+  "model": { "anten_yuksekligi_m": 1.0, "dmax_m": 300, "snr_min_db": -7.5, "snr_max_db": 10.0, "eps": 0.05 }
+}
